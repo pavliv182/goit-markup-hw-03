@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Нормализация стилей -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,6 +20,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Кастомные стили -->
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -25,28 +29,30 @@
     <!-- Шапка сайта -->
 
     <header class="header">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html">Web<span class="nav-studio">Studio</span></a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link current-link" href="./index.html">Студия</a>
+      <div class="container">
+        <nav class="nav">
+          <a class="nav-logo" href="./index.html">Web<span class="nav-studio">Studio</span></a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link current-link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-nav-list">
+          <li class="auth-nav-item">
+            <a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Контакты</a>
+          <li class="auth-nav-item">
+            <a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="auth-nav-list">
-        <li class="auth-nav-item">
-          <a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="auth-nav-item">
-          <a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- Уникальный контент -->
@@ -55,8 +61,10 @@
       <!-- Секция Герой -->
 
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-button" type="button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Секция Особенности  -->

@@ -33,16 +33,26 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
-/* ul,
-ol {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0px;
 }
-
-a {
-  text-decoration: none;
-} */
-
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+p:last-child {
+  margin-bottom: 0px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
 /* INDEX HTML */
 /* logo */
 
