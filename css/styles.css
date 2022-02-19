@@ -25,6 +25,8 @@
   --dark-background-color: #2f303a;
   /* Вторичный цвет фона темной темы */
   --dark-secondary-background-color: #f5f4fa;
+  /* Цвет фона карточек команды */
+  --card-background-color: #ffffff;
 }
 body {
   font-family: var(--main-font);
@@ -38,24 +40,21 @@ h2,
 h3,
 h4,
 p {
-  margin-top: 0px;
+  margin: 0;
 }
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-p:last-child {
-  margin-bottom: 0px;
-}
+
 ul {
   padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 a {
   text-decoration: none;
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section {
@@ -213,11 +212,23 @@ img {
 
 /* features */
 
+.features {
+  padding-bottom: 0;
+}
 .features-list {
   list-style: none;
   display: flex;
+  justify-content: center;
+}
+.features-link {
+  flex-basis: 270px;
+}
+.features-link:not(:last-child) {
+  margin-right: 30px;
 }
 .features-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -231,32 +242,57 @@ img {
 /* examples */
 
 .examples-list {
-  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .examples-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--white-title-color);
+}
+.examples-link:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* team */
 
-.team-list {
-  list-style: none;
-}
 .team {
   background-color: var(--dark-secondary-background-color);
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--white-title-color);
 }
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-card {
+  /* padding-bottom: 30px; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: var(--background-color);
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+.team-img {
+  margin-bottom: 30px;
+  width: 270px;
+}
 .team-subtitle {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -264,6 +300,7 @@ img {
   color: var(--white-title-color);
 }
 .team-text {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -273,9 +310,9 @@ img {
 /* footer */
 
 .footer {
-  background-color: var(--dark-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--dark-background-color);
 }
 
 .footer-logo {
