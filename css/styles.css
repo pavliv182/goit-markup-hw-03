@@ -163,24 +163,25 @@ img {
 /* hero */
 
 .hero {
+  padding: 200px 0;
   background-color: var(--dark-background-color);
   text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   margin: 0 auto;
   width: 696px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--black-title-font-color);
-
-  padding-top: 200px;
-  margin-bottom: 30px;
 }
 .hero-button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
   font-family: inherit;
   font-style: inherit;
   font-weight: 700;
@@ -188,22 +189,16 @@ img {
   line-height: 1.87;
   min-width: 200px;
   height: 50px;
-  /* display: flex; */
   align-items: center;
-  /* text-align: center; */
   letter-spacing: 0.06em;
 
   cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
   border-radius: 4px;
   color: var(--black-title-font-color);
   background-color: var(--accent-color);
-
-  /* padding: 10px 32px; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -276,20 +271,21 @@ img {
   display: flex;
   justify-content: center;
 }
-.team-card {
-  /* padding-bottom: 30px; */
+.team-link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background: var(--background-color);
+  background-color: var(--background-color);
 }
-.team-card:not(:last-child) {
+.team-link:not(:last-child) {
   margin-right: 30px;
 }
 .team-img {
-  margin-bottom: 30px;
   width: 270px;
+}
+.team-text-container {
+  margin: 30px 0;
 }
 .team-subtitle {
   margin-bottom: 10px;
@@ -300,7 +296,7 @@ img {
   color: var(--white-title-color);
 }
 .team-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -316,13 +312,14 @@ img {
 }
 
 .footer-logo {
+  margin-bottom: 20px;
+  display: block;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
-  display: block;
 }
 .footer-studio {
   color: var(--black-title-font-color);
@@ -332,6 +329,9 @@ img {
 /* address */
 .footer-list {
   list-style: none;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-link {
   font-weight: 400;
