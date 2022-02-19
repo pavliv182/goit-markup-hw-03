@@ -275,7 +275,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  portfolio: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--background-color);
 }
 .team-link:not(:last-child) {
@@ -350,10 +350,12 @@ img {
 
 /* Секция Фильтры */
 
-.filter-list {
-  list-style: none;
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.filter-button {
+.portfolio-nav-button {
   font-family: inherit;
   font-style: inherit;
   font-weight: 500;
@@ -367,28 +369,27 @@ img {
   color: var(--white-title-color);
   background-color: var(--dark-secondary-background-color);
 }
-.filter-button:hover,
-.filter-button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
   color: var(--black-title-font-color);
   background-color: var(--accent-color);
 }
-
-/* Секция Проекты */
-.projects-list {
-  list-style: none;
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
-.projects-link {
-  text-decoration: none;
-}
-.projects-title {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--white-title-color);
 }
-.projects-text {
+.portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-font-color);
+}
+.portfolio-img {
+  width: 370px;
 }
