@@ -57,6 +57,11 @@ a {
 img {
   display: block;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -211,7 +216,7 @@ img {
 .features-list {
   list-style: none;
   display: flex;
-
+}
 .features-title {
   font-weight: 700;
   line-height: 1.14;
@@ -269,7 +274,10 @@ img {
 
 .footer {
   background-color: var(--dark-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .footer-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -277,6 +285,7 @@ img {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
+  display: block;
 }
 .footer-studio {
   color: var(--black-title-font-color);
