@@ -47,6 +47,16 @@ h4:last-child,
 p:last-child {
   margin-bottom: 0px;
 }
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -83,6 +93,7 @@ p:last-child {
 .nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 .nav-link {
   text-decoration: none;
@@ -128,10 +139,13 @@ p:last-child {
 
 .hero {
   background-color: var(--dark-background-color);
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
+  margin: 0 auto;
+  width: 696px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
