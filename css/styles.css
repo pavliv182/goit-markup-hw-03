@@ -65,9 +65,14 @@ img {
   margin-right: auto;
   outline: 2px solid red;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /* INDEX HTML */
 /* logo */
@@ -83,6 +88,7 @@ img {
 }
 .nav-studio {
   color: var(--secondary-logo-color);
+  margin-right: 93px;
 }
 
 /* nav */
@@ -95,6 +101,12 @@ img {
   display: flex;
   align-items: center;
 }
+.nav-item {
+  margin-right: 50px;
+}
+.nav-item:last-child {
+  margin: 0;
+}
 .nav-link {
   text-decoration: none;
 }
@@ -104,6 +116,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--white-title-color);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .current-link {
   color: var(--accent-color);
@@ -118,10 +133,10 @@ img {
 .auth-nav-list {
   list-style: none;
   display: flex;
+  margin-left: auto;
+  align-items: center;
 }
-.auth-nav-item {
-  /* display: flex; */
-}
+
 .auth-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -129,10 +144,16 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
   text-decoration: none;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .auth-nav-link:hover,
 .auth-nav-link:focus {
   color: var(--accent-color);
+}
+.mail {
+  margin-right: 50px;
 }
 
 /* hero */
@@ -147,10 +168,13 @@ img {
   margin: 0 auto;
   width: 696px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--black-title-font-color);
+
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: inherit;
@@ -158,15 +182,24 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  min-width: 200px;
+  height: 50px;
+  /* display: flex; */
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
+
   cursor: pointer;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--black-title-font-color);
   background-color: var(--accent-color);
-  padding: 10px 32px;
+
+  /* padding: 10px 32px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -177,7 +210,8 @@ img {
 
 .features-list {
   list-style: none;
-}
+  display: flex;
+
 .features-title {
   font-weight: 700;
   line-height: 1.14;
