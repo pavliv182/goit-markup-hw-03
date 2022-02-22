@@ -427,12 +427,7 @@ img {
   box-sizing: border-box;
   /* outline: 1px solid teal; */
 }
-.portfolio-link {
-  /* outline: 1px solid teal; */
-}
-.portfolio-img {
-  /* outline: 1px solid teal; */
-}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
